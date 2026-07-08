@@ -8,6 +8,16 @@ This repository contains the complete database design and implementation: the ER
 
 ---
 
+## 📂 Project Files
+
+This repository includes the following project artifacts:
+
+- 📄 [ER Diagram](./ER_Diagram.pdf)
+- 📄 [Relational Schema](./Relational_Schema.pdf)
+- 🛠️ [DDL Script](./DDL_Script.sql)
+- 📥 [Sample Data](./Sample_Data.sql)
+- 📘 [Query Solutions](./Query_Solutions.pdf)
+
 ## 📌 Table of Contents
 
 - Overview
@@ -96,6 +106,9 @@ The ER diagram captures **27+ entities** connected through both simple and weigh
 - **`LEGAL_DISPUTE`** bridges `MOVIE` and `CONTRACT`, tying legal/compliance data directly back to financial agreements.
 - **`CENSOR_CERTIFICATE`**, **`DISTRIBUTION_RIGHT`**, **`SHOW_SCHEDULE`**, and **`VIEWERSHIP_ANALYTICS`** are all associative entities with composite primary keys, modeling time-bound, many-to-many business relationships (a film can have multiple distributors across multiple territories, multiple shows across multiple theatres, etc.)
 
+- ## 🧩 Entity-Relationship Design
+
+For the complete ER diagram, refer to **[ER_Diagram.pdf](./ER_Diagram.pdf)**.
 
 
 ---
