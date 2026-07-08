@@ -127,6 +127,7 @@ The logical schema translates the ER model into **27 normalized tables**, organi
 
 Every foreign key relationship in the schema has an explicit `ON DELETE` policy (`CASCADE`, `SET NULL`, or `RESTRICT`) chosen deliberately based on real-world data lifecycle rules — e.g., deleting a `MOVIE` cascades to its cast/crew, genre, and box-office records, but deleting a `PRODUCTION_HOUSE` only nullifies the movie's reference rather than deleting the film itself.
 
+For the complete relational schema, please refer to **[Relational_Schema.pdf](./Relational_Schema.pdf)**.
 
 
 ---
@@ -231,7 +232,7 @@ GROUP BY f.franchise_name
 ORDER BY cumulative_worldwide DESC;
 ```
 
-More queries in `queries/sample_queries.sql`.
+The repository also includes a sample dataset for testing and a comprehensive collection of SQL queries demonstrating the database functionality. Refer to **[Sample_Data.sql](./Sample_Data.sql)** and **[Query_Solutions.pdf](./Query_Solutions.pdf)** for more details.
 
 ---
 
